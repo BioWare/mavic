@@ -1,14 +1,10 @@
 @import "vars";
 @import "libs";
 @import "fonts";
-
+@import "global";
 
 
 
 
 @import "media";
 
-body {
-    background-color: blue($color: #333);
-    font-size: 30px;
-}
