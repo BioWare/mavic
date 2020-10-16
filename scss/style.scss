@@ -2,10 +2,11 @@
 @import "libs";
 @import "fonts";
 @import "global";
+@import "media";
 
 .header {
   position: fixed;
-  top: 30px;
+  top: 43px;
   left: 0;
   right: 0;
   z-index: 10;
@@ -28,6 +29,11 @@
     margin-right: 8px;
     text-transform: uppercase;
     cursor: pointer;
+    transition: all .4s;
+    &:hover{
+      color: #333;
+      background-color: #fff;
+    }
   }
   &_phone{
     font-size: 16px;
@@ -47,11 +53,37 @@
 
 .top{
   background-image: url('../image/backgraund/background.png');
+  display: flex;
+  align-items: flex-end;
   &__inner{
     display: flex;
     flex-direction: column;
+    text-align: center;
+    align-items: center;
+  
+  }
+  &__title{
+  font-size: 96px;
+  line-height: 115px;
+  @extend %sf-semibold;
+  margin-bottom: 25px;
+ }
+  &__text{
+  margin: 25px 0 35px;
+  max-width: 325px;
+  }
+  &__social-item{
+    display: inline-block;
+    margin: 0 25px;
+  }
+  &__social-link{
+    opacity: 0.5;
+    transition: all .3s;
+    &:hover{
+      opacity: 1;
+    }
   }
 }
 
-@import "media";
+
 
